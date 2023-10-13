@@ -1,6 +1,5 @@
 //LEETCODE 37
 //SUDOKU SOLVER
-
 class Solution {
 public:
     bool isSafe(int row,int col,vector<vector<char>>&board,char value)
