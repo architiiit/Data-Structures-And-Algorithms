@@ -5,7 +5,7 @@ public:
     bool isSafe(int row,int col,vector<vector<char>>&board,char value)
     {
         int n=board.size();  
-        for(int i=0;i<9;i++)
+        for(int i=0;i<9;i++) 
         {
             //row check
             if(board[row][i]==value)//left to right column tak check krenge
