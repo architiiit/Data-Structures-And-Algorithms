@@ -10,16 +10,16 @@ int findPivot(vector<int> arr) {
   int mid = s + (e-s)/2;
 
   while(s <= e) {
-    if(s == e) {
-      //single element
-      return s;
-    }
+    // if(s == e) {
+    //   //single element
+    //   return s;
+    // }
     if(mid +1 <= e && arr[mid] > arr[mid+1])
       return mid;
     if(mid-1 >= s && arr[mid-1] > arr[mid])
       return mid-1;
 
-    if(arr[s] > arr[mid])
+    if(arr[s] >= arr[mid])
       e = mid - 1;
     else
       s = mid + 1;
@@ -31,7 +31,8 @@ int findPivot(vector<int> arr) {
 }
 
 int main() {
-  vector<int> arr{7,8,1,2,3,4,5,6};
+  // vector<int> arr{7,8,1,2,3,4,5,6};
+  vector<int> arr{1,2,3,4,5,6};
   int ans = findPivot(arr);
   if(ans == -1) {
     cout << "Kuch gadbad hai " << endl;
