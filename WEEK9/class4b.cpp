@@ -20,7 +20,7 @@ public:
         z=_z;
         
     }
-    int getX() const   //it cannot remodify any variable
+    int getX() const//it cannot remodify any variable
     {
         //x=10;//it is possible to change x value inside const if it is mutable
         return x;

@@ -40,8 +40,8 @@ int main()
 
 //case 4
 //Downcasting
-    Dog* b=(Dog* )new Animal();//Zabardasti cast krna padega
-    b->speak();
+    // Dog* b=(Dog* )new Animal();//Zabardasti cast krna padega
+    // b->speak();
 
    
 

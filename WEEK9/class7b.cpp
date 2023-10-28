@@ -3,7 +3,7 @@
 using namespace std;
 class abc{
     public:
-       int x,y;
+      int x,y;
        abc():x(0),y(0){}
         // void print()const 
         // {    //this is a pointer which belongs to particaular instance
@@ -17,6 +17,7 @@ class abc{
 };
 int main()
 {
+    //print function saare instances me common hoga is liye isko aise likh sakte hain
     abc obj1;
     abc::print();
     abc obj2;

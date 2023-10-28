@@ -4,10 +4,10 @@
 #include"bird.h"
 using namespace std;
 
-void birdDoesDomething(Bird *bird){
+void birdDoesDomething(Bird *&bird){
     bird->eat();
     bird->fly();
-    bird->fly();
+    bird->fly(); 
     bird->eat();
 }
 int main()
@@ -23,6 +23,6 @@ int main()
     birdDoesDomething(bir);
     //faayda hua sirf ek line change kara aur poora functionality change ho jaayega
 
-    //Bird *b2=new Bird();//it is rule that bird is an interface and it cannot be used to create an object
+    // Bird* b2=new Bird();//it is rule that bird is an interface and it cannot be used to create an object
 return 0;
 }

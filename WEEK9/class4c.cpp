@@ -54,7 +54,7 @@ public:
 void printABC(const abc &a)
 {
     //all the functions called from inside this function sholuld be const 
-    cout<<a.getX()<<" "<<a.getY()<<" "<<a.getZ()<<endl;
+   cout<<a.getX()<<" "<<a.getY()<<" "<<a.getZ()<<endl;
     //a.setX(10);//it will give error because it is not a const function
 }
 

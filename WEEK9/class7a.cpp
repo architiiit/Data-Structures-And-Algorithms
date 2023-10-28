@@ -21,10 +21,13 @@ int abc::y;
 int main()
 {
     abc obj1;
+    //another way to initialise
+    // abc obj1={1,2};
     obj1.x=1;
     obj1.y=2;
     obj1.print();
     abc obj2;
+    // abc obj2={10,20};
     obj2.x=10;
     obj2.y=20;
     obj1.print();
