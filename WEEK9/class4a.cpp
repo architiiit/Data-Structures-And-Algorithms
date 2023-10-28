@@ -23,7 +23,7 @@ int main()
 //     a=&b;//pointer can be reassigned
 //     cout<<*a<<endl;
      
-//3.Const Pointer,but non-const data
+// //3.Const Pointer,but non-const data
 // int *const a=new int(2);
 // cout<<*a<<endl;
 // *a=20;//content can be changed
@@ -32,10 +32,10 @@ int main()
 // //a=&b;//nhi chalega,Const pointer
 
 //4.Const pointer,const data
-// // const int *const a=new int(10);
+// const int *const a=new int(10);
 // int const *const a=new int(10);
 // cout<<*a<<endl;
-// //*a=50;//not possible
+//*a=50;//not possible
 // int b=100;
 // a=&b;//not possible
 

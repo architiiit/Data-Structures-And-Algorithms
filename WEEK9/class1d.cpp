@@ -97,6 +97,6 @@ int main()
     b->age=12;
 
     //Manually
-    delete b;//now for b destructor is called manually in case of dynamic object creation
+   delete b;//now for b destructor is called manually in case of dynamic object creation
 return 0;
 }

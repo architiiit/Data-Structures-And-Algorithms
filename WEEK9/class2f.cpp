@@ -26,5 +26,6 @@ int main()
 { 
     Scorpio babbarWali;
     babbarWali.speedUp();
+    babbarWali.breakMaaro();
 return 0;
 }

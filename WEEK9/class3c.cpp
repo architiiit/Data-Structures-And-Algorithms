@@ -30,8 +30,8 @@ int main()
 { 
     // Animal* a=new Animal();//single constructor call hoga
     // Dog* b=new Dog();//is case me dono constructor call ho raha hai kyonki parent se inherit ho raha hai jo ki normal hai
-    Animal* c=new Dog();//same type se dono constructor call honge
-    Dog* d=(Dog* )new Animal();//is case me sirf animal call hoga kyonki animal kisi pe depend nhi karta
+    // Animal* c=new Dog();//same type se dono constructor call honge
+    // Dog* d=(Dog* )new Animal();//is case me sirf animal call hoga kyonki animal kisi pe depend nhi karta
 
     // BASICALLY RHS PE HI DEPEND KREGA AGAR DOG HAI TO DONO CALL HOGA Agar animal hai to sirf ek hi call hoga
     //Pointer sirf represent kr rhe hain uska constructor call se koi dependencty nhi hai

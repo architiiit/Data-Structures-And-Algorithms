@@ -1,5 +1,5 @@
 //Inheritence continued
-//CASE 2 ->Base class is protected=(Public->Protected) (Protected->Protected) (Private->Private)
+//CASE 2 ->Base class is protected=(protected+Public->Protected)(protected+Protected->Protected)(protected+Private->Private)
 
 #include<iostream>
 using namespace std;

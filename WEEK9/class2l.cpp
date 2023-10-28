@@ -4,7 +4,7 @@ using namespace std;
 class Param{
     public:
         int val;
-        //syntax for operator overloading
+//syntax for operator overloading
     void operator+(Param& obj2)
     {
         int value1=this->val;

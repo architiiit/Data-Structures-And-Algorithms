@@ -127,11 +127,11 @@ int main()
     // Animal a(10);//static
     // Animal* b=new Animal(100);//Dynamic
 
-    //Parametrised constructor called for 1 parametre
+    //Parametrised constructor called for 2 parametre
     // Animal a(10,50);//static
     // Animal* b=new Animal(100,50);//Dynamic
 
-    //Parametrised constructor called for 1 parametre
+    //Parametrised constructor called for 3 parametre
     // Animal a(10,50,"babbar");//static
     // Animal* b=new Animal(100,50,"babbar");//Dynamic
 
@@ -164,13 +164,13 @@ int main()
 
 //**********************************
     // Destructor concept
-    cout<<"A object Creation"<<endl;
-    Animal a;//static
-    a.age=5;
+    // cout<<"A object Creation"<<endl;
+    // Animal a;//static
+    // a.age=5;
 
-    cout<<"B object creation"<<endl;
-    Animal* b=new Animal();//Dynamic
-    b->age=12;
+    // cout<<"B object creation"<<endl;
+    // Animal* b=new Animal();//Dynamic
+    // b->age=12;
 
 return 0;
 }

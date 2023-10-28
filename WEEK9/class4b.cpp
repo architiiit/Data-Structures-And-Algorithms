@@ -7,11 +7,12 @@ int x;
 int *y;
 int z;
 public:
-    abc()//constructor
+    abc()//default constructor
     {
         x=0;
         y=new int(0);
     }
+    // parametrized constructor
     abc(int _x,int _y,int _z=0)//third one is default argument
     {
         x=_x;

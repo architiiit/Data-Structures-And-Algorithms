@@ -27,5 +27,6 @@ int main()
     cout<<obj.sum(2,5)<<endl;
     cout<<obj.sum(2,5,3)<<endl;
     cout<<obj.sum(2,5.12f)<<endl;//f ->telling that it is float
+    
 return 0;
 }

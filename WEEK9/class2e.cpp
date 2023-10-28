@@ -1,5 +1,5 @@
 //Inheritence continued
-//CASE 2 ->Base class is private==All are not accessible (Public->NA) (Protected->NA) (Private->NA)
+//CASE 2 ->Base class is private=All are not accessible(private+Public->NA)(private+Protected->NA)(private+Private->NA)
 
 #include<iostream>
 using namespace std;
