@@ -1,7 +1,7 @@
-//POINTERS ASSIGNMENT
-//LETS PRACTICE POINTERS
+// POINTERS ASSIGNMENT
+// LETS PRACTICE POINTERS
 
-//QUES1
+// QUES1
 // #include<iostream>
 // using namespace std;
 
@@ -46,7 +46,7 @@
 // return 0;
 // }
 
-//QUES4
+// QUES4
 //  #include<iostream>
 //  using namespace std;
  
@@ -80,13 +80,13 @@
 // int a=7;//&a->300
 // int* c=&a;
 // c=c+1;//dusre address pe chala jaayega jisme koi bhi gabage value ho sakta hai
-//300+1=304
+// 300+1=304
 // cout<<a<<" "<<*c<<endl;
 // return 0;
 // }
 
-//QUES7
-//assume memory address of variable 'a' is 400, what will be the O/P
+// QUES7
+// assume memory address of variable 'a' is 400, what will be the O/P
 
 // #include<iostream>
 // using namespace std;
