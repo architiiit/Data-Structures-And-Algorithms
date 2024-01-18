@@ -40,7 +40,7 @@ public:
     {  
     //  int f=20;
     //     y=&f;
-        return *y;
+        return *y;      
     }
     void setY(int _val)
     {

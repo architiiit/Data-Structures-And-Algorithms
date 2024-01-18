@@ -6,6 +6,7 @@ using namespace std;
 class Animal{
     public:
      virtual void speak()
+    // void speak()
         {
             cout<<"Speaking"<<endl;
         }
@@ -13,7 +14,7 @@ class Animal{
 class Dog:public Animal{
     public:
         //override k
-    void speak()
+      void speak()
 //virtual mark karna padega taaaki child class ka function call ho run time pe
         {
             cout<<"barking"<<endl;
@@ -40,8 +41,8 @@ int main()
 
 //case 4
 //Downcasting
-    // Dog* b=(Dog* )new Animal();//Zabardasti cast krna padega
-    // b->speak();
+    Dog* b=(Dog* )new Animal();//Zabardasti cast krna padega
+    b->speak();
 
    
 

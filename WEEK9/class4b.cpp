@@ -54,8 +54,9 @@ void printABC(const abc &a)
 int main()
 {
 abc a(1,2,3);
-printABC(a);
-// cout<<a.getX()<<endl;
-// cout<<a.getY()<<endl;
+// printABC(a);
+cout<<a.getX()<<endl;
+cout<<a.getY()<<endl;
+cout<<a.getZ()<<endl;
 return 0;
 }

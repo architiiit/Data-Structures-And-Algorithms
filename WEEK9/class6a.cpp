@@ -27,6 +27,6 @@ int main()
         cout<<::x<<endl;//global accessible
     }
 fun();
-
+    cout<<x<<endl;
 return 0;
 }

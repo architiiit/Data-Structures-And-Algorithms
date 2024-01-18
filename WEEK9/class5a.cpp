@@ -10,18 +10,18 @@ class abc{
       
         //default dumb copy constructor:it does SHALLOW COPY
         //ye nhi bhi define krenge to bhi compiler khud se bana deta hai
-        abc(const abc &a)
-        {
-            this->x=a.x;
-            this->y=a.y;
-        }
-
-        //OUR SMART DEEP COPY
         // abc(const abc &a)
         // {
         //     this->x=a.x;
-        //     this->y=new int(*a.y);//a ke y ki value uthai aur usko ek nayi location pe point krwai
+        //     this->y=a.y;
         // }
+
+        //OUR SMART DEEP COPY
+        abc(const abc &a)
+        {
+            this->x=a.x;
+            this->y=new int(*a.y);//a ke y ki value uthai aur usko ek nayi location pe point krwai
+        }
 
         void print() const
         {
@@ -53,7 +53,8 @@ int main()
 //*************************************************
 abc *a=new abc(1,2);
 abc b=*a;//shallow copy
-delete a;//a ka destructor call hoga aur y delete kr rhe hain
-b.print();//y to delete ho chuka hai already a se aur fir se destructor call hua hoga b ke liye to same location se 2 baar delete ho raha hai
+// delete a;//a ka destructor call hoga aur y delete kr rhe hain
+// b.print();//y to delete ho chuka hai already a se aur fir se destructor call hua hoga b ke liye to same location se 2 baar delete ho raha hai
+
 return 0;
 }

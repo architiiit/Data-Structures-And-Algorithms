@@ -11,7 +11,7 @@ class Animal {
 };
 
 //Child class creation
-class Dog:private Animal{
+class Dog:protected Animal{
     public:
     void print()
     {
@@ -21,7 +21,7 @@ class Dog:private Animal{
 int main()
 {
     Dog d1;
-   // cout<<d1.age;//outside access kr rhe hain
+    // cout<<d1.age;//outside access kr rhe hain
     d1.print();//means can be asseced inside class 
 return 0;
 }
