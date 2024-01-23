@@ -1,3 +1,6 @@
+//Question:Reverse a linked list
+
+
 // Insertion and Deletion of singly linked list
 #include <iostream>
 using namespace std;
@@ -127,7 +130,6 @@ void print(Node *head)
         temp = temp->next;
     }
 }
-
 void deleteNode(int position, Node *&head, Node *&tail)
 {
     if (head == NULL)
@@ -186,6 +188,51 @@ void deleteNode(int position, Node *&head, Node *&tail)
     // delete curr
     delete curr;
 }
+Node* reverse(Node* &prev,Node* &curr)
+{
+    if(curr==NULL)
+    {//LL is reversed
+        return prev;
+    }
+
+    //1 case solve then revcursion will handle
+    Node* forward=curr->next;
+    curr->next=prev;
+
+   return reverse(curr,forward);
+
+}
+Node* reverseusingLoop(Node* head)
+{
+    Node*prev=NULL;
+    Node*curr=head;
+
+    while(curr!=NULL)
+    {
+        Node* forward=curr->next;
+        curr->next=prev;
+        prev=curr;
+        curr=forward;
+    }
+    return prev;
+}
+Node* reverseusingRecursion(Node* prev,Node* curr)
+{
+    //base case
+    if(curr==NULL)
+    {
+        return prev;
+    }
+
+    //1 case solve krna hai
+    Node* forward=curr->next;
+    curr->next=prev;
+    prev=curr;
+    curr=forward;
+
+    //recursion sambhal lega
+   return reverseusingRecursion(prev,curr);
+}
 int main()
 {
     // Node* head=new Node(10);
@@ -201,21 +248,30 @@ int main()
     print(head);
     cout << endl;
 
-    cout << "head: " << head->data << endl;
-    cout << "tail: " << tail->data << endl;
+    // cout << "head: " << head->data << endl;
+    // cout << "tail: " << tail->data << endl;
 
-    insertAtPosition(101, 5, head, tail);
+    // insertAtPosition(101, 5, head, tail);
 
-    cout << "Printing after inserting at position call " << endl;
-    print(head);
-    cout << endl;
+    // cout << "Printing after inserting at position call " << endl;
+    // print(head);
+    // cout << endl;
 
     // cout << "head: " << head->data << endl;
     // cout << "tail: " << tail->data << endl;
 
-    deleteNode(4,head,tail);
+    // deleteNode(4,head,tail);
+    // cout<<endl;
+    // print(head);
+
+    Node* prev=NULL;
+    Node* curr=head;
+    // head=reverse(prev,curr);
+    head=reverseusingLoop(head);
+    // head=reverseusingRecursion(prev,curr);
+
     cout<<endl;
     print(head);
-
+    cout<<endl;
     return 0;
 }
