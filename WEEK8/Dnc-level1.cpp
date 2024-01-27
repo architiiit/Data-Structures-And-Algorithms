@@ -15,7 +15,7 @@ void merge(int* arr,int s,int e)
 
     //copy values to left array
     int k=s;//starting of first array
-    for(int i=0;i<len1;i++)-
+    for(int i=0;i<len1;i++)
     {
         left[i]=arr[k];
         k++;
