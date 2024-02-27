@@ -1,6 +1,6 @@
 //LEETCODE:160
 //QUESTION 2:Intersection point of two linked lists
-// class Solution {
+// class Solution {  
 // public:
 //     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
 //         ListNode* a=headA;

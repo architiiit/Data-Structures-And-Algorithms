@@ -1,4 +1,5 @@
-// //QUESTION 1:Print Kth node from end
+// //QUESTION 1:
+// GFG::Print Kth node from end
 // void fun(SinglyLinkedListNode* head,int &positionFromTail,int &ans)
 // {
 //     if(head==NULL)

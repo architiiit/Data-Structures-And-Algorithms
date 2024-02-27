@@ -98,7 +98,7 @@ void insertAtPosition(Node *&head, Node *&tail, int data, int position)
     // if LL empty
     if (head == NULL)
     {
-        Node *newNode = new Node(data);
+        Node *newNode = new Node(data); 
         head = newNode;
         tail = newNode;
     }
