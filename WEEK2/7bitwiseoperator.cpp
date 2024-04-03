@@ -11,6 +11,7 @@ int main()
 // cout<<(5&3)<<endl;//101 & 011 = 001
 
 cout<<~5<<endl;
+cout<<((5)^(-5))<<endl;
 // int a=12;
 // // a=a<<1;
 // //a=a<<2;

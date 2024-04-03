@@ -3,23 +3,24 @@ using namespace std;
 int main()
 {
 //PYRAMID
-//     *
-//    * *
-//   * * *
-// * * * * *
-// int n;
-// cin>>n;
-// for(int row=0;row<n;row++)
-// {
-//     for(int j=0;j<n-(row+1);j++)//for spaces 
-//     {
-//         cout<<" ";
-//     }
-//     for(int k=0;k<row+1;k++)//for stars
-//     {
-//         cout<<"* ";
-//     }
-// cout<<endl;
+//    * 
+//   * * 
+//  * * * 
+// * * * *
+int n;
+cin>>n;
+for(int row=0;row<n;row++)
+{
+    for(int j=0;j<n-(row+1);j++)//for spaces 
+    {
+        cout<<" ";
+    }
+    for(int k=0;k<row+1;k++)//for stars
+    {
+        cout<<"* ";
+    }
+cout<<endl;
+}
 // }
 //INVERETED PYRAMID
 // * * * * * * 

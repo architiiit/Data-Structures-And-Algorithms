@@ -87,7 +87,7 @@ int lowerBound(vector<int>& arr,int x)
 {
     int start=0;
     int end=arr.size()-1;
-    int ans=end;//isko modify krna hoga end se kyonki ye jaruri nhi hai ki x present hoga ya nhi array me to hmko fir lower bound us case me nhi milega to directly bool denge ki end hi mera lowe bound hai
+    int ans=end;//isko modify krna hoga end se kyonki ye jaruri nhi hai ki x present hoga ya nhi array me to hmko fir lower bound us case me nhi milega to directly bool denge ki end hi mera lower bound hai
     //ans=end wala case is liye lena pa raha hai kyonki ho skta hai aisa element de de jo array ke saare elenments se bhi jyaada bada ho
     int mid=start+(end-start)/2;
     while(start<=end)
@@ -95,7 +95,7 @@ int lowerBound(vector<int>& arr,int x)
         if(arr[mid]>=x)
         {   ans=mid;//closest nikalne ke liye dono condition ek saath le rhe hain
             end=mid-1;
-        }
+        } 
         else if(x>arr[mid])
         {
             start=mid+1;

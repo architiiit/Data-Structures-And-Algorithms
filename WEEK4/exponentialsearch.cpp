@@ -91,7 +91,7 @@ int expSearch(int a[],int x)
 int main()
 {
     int a[]={3,4,5,6,11,13,14,15,56,70};
-    int x=15;
+    int x=11;
     int ans=expSearch(a,x);
     cout<<ans<<endl;
     return 0;

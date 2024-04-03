@@ -1,6 +1,6 @@
 //LEETCODE:225 stack using queue
 
-//Method 1 using 2 stacks
+//Method 1 using 2 queues
 class MyStack {
 public:
     queue<int>q1,q2;
