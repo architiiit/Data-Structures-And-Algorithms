@@ -109,7 +109,7 @@ void printTopView(Node* root){
         }
         if(frontNode->right)
         {
-            q.push(make_pair(frontNode->right,hd+1));//left jaate hue ditance ek plus karo
+            q.push(make_pair(frontNode->right,hd+1));//right jaate hue ditance ek plus karo
         }
 
     }

@@ -18,8 +18,8 @@ public:
             return false;
         }
         else{
-            
-            if(p->val==q->val && traversal(p->left,q->right)&& traversal(p->right,q->left))
+                
+            if(p->val==q->val && traversal(p->left,q->right) && traversal(p->right,q->left))
             {
                 return true;
             }

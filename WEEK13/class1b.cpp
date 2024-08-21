@@ -22,3 +22,26 @@ public:
         return ans;
     }
 };
+
+//Fastest way to find dimetre of a tree
+
+class Solution {
+public:
+    int D=0;
+    int maxDepth(TreeNode* root) {
+    if(root==NULL)
+    return 0;
+
+    int leftHeight=maxDepth(root->left);
+    int rightHeight=maxDepth(root->right);
+    int currD=leftHeight+rightHeight;
+    int D=max(currD,D);
+    int ans=max(leftHeight,rightHeight)+1;
+    return ans;
+
+    }
+    int diameterOfBinaryTree(TreeNode* root) {
+        maxDepth(root);
+        return D;
+    }
+};
