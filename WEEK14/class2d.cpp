@@ -1,3 +1,4 @@
+// build binary tree from inorder
 #include<iostream>
 #include<queue>
 using namespace std;
@@ -197,13 +198,36 @@ Node* deleteNodeInBST(Node* root,int target)
    }
     return root;
 }
+
+Node* bstUsingInorder(int inorder[] ,int s,int e){
+    //base case
+    if(s>e){
+        return NULL;
+    }
+    int mid=(s+e)/2;
+    int element=inorder[mid];
+    Node* root=new Node(element);
+
+    root->left=bstUsingInorder(inorder,s,mid-1);
+    root->right=bstUsingInorder(inorder,mid+1,e);
+
+    return root;
+}
+//TC:O(N)->kyonki har baar ek node hi pich kr rhe hain
 int main()
 {
-    Node* root=NULL;
-    cout<<"Enter the data for node"<<endl;
-    takeInput(root);
-    cout<<"Printing the tree"<<endl;
+    int inorder[]={1,2,3,4,5,6,7,8,9};
+    int s=0;
+    int e=8;
+
+    Node* root=bstUsingInorder(inorder,s,e);
     levelOrderTraversal(root);
+
+    // Node* root=NULL;
+    // cout<<"Enter the data for node"<<endl;
+    // takeInput(root);
+    // cout<<"Printing the tree"<<endl;
+    // levelOrderTraversal(root);
     
     // cout<<endl;
     // cout<<"Printing inorder:"<<endl;
@@ -227,10 +251,10 @@ int main()
     // cout<<endl<<"Minimum value: "<<minVal(root)<<endl;
     // cout<<endl<<"Minimum value: "<<maxVal(root)<<endl; 
 
-    int targetDelete=150;
-    deleteNodeInBST(root,targetDelete);
-    cout<<"After deletion :"<<endl;
-    levelOrderTraversal(root);
+    // int targetDelete=150;
+    // deleteNodeInBST(root,targetDelete);
+    // cout<<"After deletion :"<<endl;
+    // levelOrderTraversal(root);
 
 return 0;
 }
